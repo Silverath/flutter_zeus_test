@@ -7,7 +7,6 @@ class UserDetailScreen extends StatelessWidget {
   const UserDetailScreen({super.key, required this.user});
 
   @override
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(user.name)),

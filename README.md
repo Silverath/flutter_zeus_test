@@ -1,16 +1,15 @@
-# ceus_user_list_advanced
+# Test App para Zeus
 
-A new Flutter project.
+Para esta prueba se ha utilizado el framework de Flutter como se ha pedido, con su pantalla principal (lista) 
+y la pantalla de detalles de los usuarios, además de la función de recargar la pantalla de la lista al deslizar
+la lista hacia abajo.
 
-## Getting Started
+Para el manejo de estados se ha usado Riverpod, en el UserController (StateNotifier) y con su provider (UserControllerProvider),
+mediante el cual la UI (user_screen_list) lo consume y reacciona al estado.
 
-This project is a starting point for a Flutter application.
+He decidido que el manejo de estados solo iría en la lista de usuarios, ya que:
 
-A few resources to get you started if this is your first Flutter project:
+- Al cargarse los datos, se carga toda la información de todos los usuarios.
+- Al pasar a la pantalla de detalles, se usa la información ya cargada, por lo que es irrelevante el uso de manejo de estados.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Para las versiones, mirar el archivo pubspec.yaml
